@@ -6,11 +6,11 @@ require 'yahtzee'
 Gem::Specification.new do |spec|
   spec.name          = "functional-yahtzee"
   spec.version       = Yahtzee::VERSION
-  spec.authors       = ["Dreamr"]
-  spec.email         = ["dreamr.okelly@gmail.com"]
+  spec.authors       = ["Jim OKelly"]
+  spec.email         = ["jim@onlinedevschool.com"]
   spec.description   = %q{Functional yahtzee}
   spec.summary       = %q{Yahztee in functional ruby}
-  spec.homepage      = "http://github.com/dreamr/functional_yahtzee"
+  spec.homepage      = "http://github.com/onlinedevschool/functional_yahtzee"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

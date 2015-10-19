@@ -5,8 +5,6 @@ highly opinionated, and is ahallmark of my style. This is my perfect world where
 
 If you are like me, and I know I am... you have something to learn from this code here. This is how you write clean, decoupled, testable, functional ruby code. If you have nothing to learn from this code, please, point something out I have wrong. I love to be *proved* wrong on something so I can correct it.
 
-Expect a series of screencasts discussing the choices I have made here to get the results I ended up with.
-
 [rubyquiz #19](http://rubyquiz.com/quiz19.html) proposed this
 problem, and a very imperative solution was provided by James
 Edward Gray II, one my ruby heros. I doubt he would write this the same way could he revisit the problem.
@@ -39,6 +37,11 @@ rake
 ## Usage
 
 ```ruby
+# Everything is namespaced under Yahtzee:: so the easiest way to use the code
+# within is to require and include it.
+require 'yahtzee'
+include Yahtzee
+
 score_card = ScoreCard.new    
 writer     = ScoreCard.persist(score_card)
 
@@ -77,7 +80,7 @@ I am not accepting contributions at this time, this is my showcase code. This is
 
 ## Many Thanks
 
-I would like to say thank you to all the people I have sucked off of like a vampiric zombie since 2007. Some of these were from videos of talks, some were pairing sessions, some were just friends on irc who liked to bang Ruby.
+I would like to say thank you to all the people I have sucked off of like a vampiric zombie since 2007. Some of these were from videos of talks, some were pairing sessions, some were just friends on irc who liked to bang out Ruby.
 
 * James Edward Gray II
 * Josh Susser
@@ -102,8 +105,6 @@ I would like to say thank you to all the people I have sucked off of like a vamp
 Whew.. Sorry if I missed you!
 
 ## Health
-
-* My code can beat your code up
 
 [![Build
 Status](https://travis-ci.org/dreamr/functional_yahtzee.png)](https://travis-ci.org/dreamr/functional_yahtzee)
